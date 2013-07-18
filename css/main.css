@@ -257,7 +257,7 @@ section.first img{
 .improve_lactation .text-section{
     margin-bottom: 96px;
 }
-.leptaden h2{
+.leptaden-header h2{
     display: inline-block;
     margin-right: 10px;
     color: #08498f;
@@ -294,7 +294,7 @@ section.first img{
 .section-body.reviews{
     padding: 30px 80px;
 }
-.section-header#reviews img{
+.section-header.reviews-header img{
     position: relative;
     float: left;
     margin-right: 20px;

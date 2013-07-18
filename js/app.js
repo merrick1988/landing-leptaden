@@ -1,10 +1,18 @@
 $(function(){
     //init
+    var hash = window.location.hash;
+    if(hash){
+        setActiveMenu($("[href='" + hash + "']"));
+        $('body,html').stop().animate({scrollTop: $("[data-hash='" + hash.slice(1) + "']").offset().top},'slow');
+        console.log($(".section-header[data-hash='" + hash.slice(1) + "']"));
+        console.log($('#section-header').index($(".section-header[data-hash='" + hash.slice(1) + "']")));
+        $( "#accordion" ).accordion( { active: 2 } );
+    }
     $( "#accordion" ).accordion();
 
     // add listeners
     $("nav li").on("click", function(event){
-        setActiveMenu(event);
+        setActiveMenu(event.target);
         navigate(event);
     })
     $(".review-more").click(function(){
@@ -16,14 +24,17 @@ $(function(){
     });
 
     // privet functions
-    function setActiveMenu(event){
+    function setActiveMenu(element){
         $("nav li a").removeClass("active");
-        $(event.target).addClass("active")
+        $(element).addClass("active")
     };
 
     function navigate(event){
         var target = $(event.target).attr("href");
-        $('body,html').stop().animate({scrollTop: $(target).offset().top},'slow');
+        console.log("[data-hash='" + target.slice(1) + "']")
+        $('body,html').stop().animate({scrollTop: $("[data-hash='" + target.slice(1) + "']").offset().top},'slow');
+        window.location.hash = target;
         event.preventDefault();
+
     };
 })
