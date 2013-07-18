@@ -1,0 +1,365 @@
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+body{
+    font-family: Calibri;
+    margin: 0;
+    background: #ffd8f1;
+    color: #565555;
+}
+.body{
+    width: 1040px;
+    margin: 0 auto;
+    background: #fff;
+}
+h2{
+    font-size: 36px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+h3{
+    font-size: 24px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #565555;
+    margin: 5px 0 27px;
+}
+ul{
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+strong{
+    font-size: 18px;
+}
+.hide{
+    display: none;
+}
+/* header*/
+header{
+    padding:15px 40px 0 40px;
+    height: 79px;
+    border-bottom: 1px solid #e0e0e0;
+}
+header .logo, header .title, header .social, header .advertising, header .buy-button{
+    display: inline-block;
+    vertical-align: middle;
+}
+header .logo_title h1{
+    font-size: 51px;
+    font-weight: bold;
+    color: #08498f;
+    line-height: 1;
+    margin: 0;
+}
+header .logo_description{
+    font-size: 13.5px;
+    color: #565555;
+}
+header .title{
+    font-weight: bold;
+    color: #000000;
+    font-size: 14.5px;
+    margin: 0 15px;
+}
+header .social{
+    margin: 0 30px;
+}
+header .advertising{
+    font-size: 10px;
+    color: #565555;
+    text-align: center;
+    width: 100px;
+    margin: 0 8px;
+}
+header .buy-button{
+    margin-left: 10px;
+}
+header .buy-button a{
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: #f3438b;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: url("../images/buy_button.png") no-repeat;
+    width: 225px;
+    height: 60px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px 0 0 60px;
+}
+/* end header*/
+
+/* nav */
+nav{
+    padding: 17px 15px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li{
+     display: inline-block;
+     margin: 0 26px;
+}
+nav ul li a{
+    font-size: 14px;
+    color: #565555;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a.active{
+    color: #f3438b;
+}
+/* end nav */
+/* main content*/
+section{
+    position: relative;
+}
+.section-background{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: url("../images/tringel.png") repeat-x;
+}
+.section-background.pink{
+    top: -5px;
+    background: url("../images/tringel-pink.png") repeat-x;
+}
+.section-background.bottom{
+    top: inherit;
+    bottom: 0;
+    background: url("../images/tringel_bottom.png") repeat-x;
+}
+.ui-accordion-header-active .section-background.bottom{
+    display: none;
+}
+
+.pink{
+    background: url("../images/pink.png");
+}
+.blue{
+    background: url("../images/blue.png");
+}
+.pink,
+.pink h2,
+.blue,
+.blue h2{
+    color: #fff;
+}
+.pink h2,.blue h2{
+    text-shadow: 1px 1px 5px #565555;
+}
+.section-header{
+    padding: 20px 40px;
+    position: relative;
+    margin-bottom: 3px;
+}
+.ui-accordion-header-active .section-header-background{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    position: absolute;
+    width: 100%;
+    background: url("../images/section-header-bg.png") bottom repeat-x;
+}
+
+.section-header .collapse-icon{
+    background: url("../images/collapse-icon-close.png") no-repeat;
+    position: absolute;
+    width: 34px;
+    height: 32px;
+    right: 40px;
+    top: 25px;
+    cursor: pointer;
+}
+.section-header .collapse-icon.white{
+    background: url("../images/collapse-icon-close-white.png") no-repeat;
+}
+.section-body img{
+    position: absolute;
+    bottom: 0;
+}
+img.right{
+    right: 0;
+}
+img.left{
+    left: 0;
+}
+.text-section{
+    display: inline-block;
+    font-size: 18px;
+    width: 66%;
+}
+.text-section.right{
+    margin-left: 33%;
+}
+.text-section ul{
+    margin-left: 22px;
+}
+.section-body{
+    margin-top: -3px;
+    position: relative;
+    padding: 0 40px 40px;;
+}
+section.first{
+    background-color: #15b47d;
+    color: #fff;
+    padding: 20px 40px;
+}
+section.first .question-area, section.first .text{
+    display: inline-block;
+    vertical-align: top;
+}section.first .question-area{
+     width: 45%;
+     margin-right: 17.5%;
+}
+section.first .question-area .marginRight{
+    margin-right: 15%;
+}
+section.first .text{
+    font-size: 14px;
+    width: 37%;
+}
+section.first .text p{
+    line-height: 16px;
+    margin: 5px 0 12px;
+}
+section.first .text cite{
+    font-size: 10px;
+    font-style: italic;
+    display: block;
+    margin-top: 40px;
+}
+section.first img{
+    position: absolute;
+    left: 347px;
+    top: 30px;
+}
+.breast_milk img{
+    top: -3px;
+}
+.breast_milk .text-section{
+    margin: 35px 0 40px 40%;
+    font-size: 17px;
+    width: 59%;
+}
+.improve_lactation .text-section{
+    margin-bottom: 96px;
+}
+.leptaden h2{
+    display: inline-block;
+    margin-right: 10px;
+    color: #08498f;
+}
+.leptaden a.order-button {
+    margin: 70px 0 20px;
+    text-align: center;
+    display: block;
+    width: 300px;
+    height: 71px;
+    text-decoration: none;
+    color: #fff;
+    background: url("../images/order-button.png") no-repeat;
+}
+.leptaden a.order-button span{
+    font-size: 16px;
+}
+.leptaden a.order-button h3{
+    font-size: 26px;
+    margin: 0;
+    line-height: 1;
+    padding: 5px 0;
+}
+.leptaden .text-section{
+    width: 33%;
+    margin-left: 38%;
+    display: inline-block;
+}
+.leptaden .text-section p{
+    font-size: 14px;
+}
+/* end main content*/
+/*   reviews  */
+.section-body.reviews{
+    padding: 30px 80px;
+}
+.section-header#reviews img{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.review-section-wrapper{
+    overflow: hidden;
+    height: 255px;
+}
+.review img{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.review p{
+    display: inline-block;
+    vertical-align: middle;
+    width: 85%;
+    margin-left: 20px;
+}
+.review{
+    margin-bottom: 20px;
+}
+.review-more{
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+.review-more img{
+    position: relative;
+}
+#all{
+    padding-bottom: 10px;
+}
+#all h2{
+    margin: 30px 0 20px;
+    line-height: 1;
+    width: 65%;
+    font-size: 62px;
+    font-family: Century Gothic;
+    font-weight: normal;
+    color: #6cd48e;
+}
+#all .brand{
+    margin-bottom: 15px;
+    margin-left: -10px;
+    position: relative;
+}
+.alarsin img,
+.alarsin span{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.alarsin span{
+    margin-left: 15px;
+    width: 80px;
+    font-size: 10px;
+}
+.contacts{
+    margin: 10px 0;
+}
+.contacts span{
+    line-height: 1;
+    display: block;
+    font-size: 12px;
+    opacity: 0.5;
+}
